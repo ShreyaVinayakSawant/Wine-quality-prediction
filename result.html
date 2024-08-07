@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Wine Quality Prediction Result</h1>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Predicted Wine Quality: {{ prediction }}</h2>
+                <p class="card-text">Rating: {{ rating }}</p>
+                <a href="/" class="btn btn-primary">Predict Another</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
